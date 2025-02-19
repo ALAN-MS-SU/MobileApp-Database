@@ -1,12 +1,9 @@
 import { View } from "react-native";
-import { Text } from "~/components/ui/text";
-import { ThemeToggle } from "../ThemeToggle";
-
+import { Header } from "../pieces";
 export function Login() {
   return (
-    <View className=" flex-1 flex flex-col items-center justify-center">
-      <ThemeToggle />
-      <Text>SURGE</Text>
+    <View className="flex-1">
+      <Header />
     </View>
   );
 }

@@ -14,7 +14,7 @@ import { useColorScheme } from "~/lib/useColorScheme";
 import { PortalHost } from "@rn-primitives/portal";
 import { ThemeToggle } from "~/components/ThemeToggle";
 import { setAndroidNavigationBar } from "~/lib/android-navigation-bar";
-import { Router } from "./routes/router";
+import Router from "./routes/router";
 
 const LIGHT_THEME: Theme = {
   ...DefaultTheme,

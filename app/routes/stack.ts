@@ -1,9 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 export interface Stack {
   Name: string;
-  Component: React.JSX.Element;
+  Component: ()=>React.JSX.Element;
 }
-export class Stacks {
+export default class Stacks {
   public static Stack = createNativeStackNavigator();
   private Routes: Stack[] = [];
   constructor(...routes: Stack[]) {

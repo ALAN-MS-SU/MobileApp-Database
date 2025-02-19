@@ -9,7 +9,7 @@ export default function NotFoundScreen() {
       <View>
         <Text>Está rota não existe</Text>
 
-        <Link href='/'>
+        <Link href='/routes/router'>
           <Text>Go to home screen!</Text>
         </Link>
       </View>
