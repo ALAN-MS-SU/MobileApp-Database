@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Mob+Bd",
-    "slug": "Mob+Bd",
+    "name": "MobBd",
+    "slug": "MobBd",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
