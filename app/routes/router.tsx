@@ -1,16 +1,25 @@
 import Stacks, { Stack } from "./stack";
-import { Login } from "~/components/pages/Login";
+import { Login, NewUser } from "~/components/pages";
+import { createStackNavigator } from "@react-navigation/stack";
+import React from "react";
 export default function Router() {
-  const StackRouter: Stack[] = new Stacks({
-    Name: "Login",
-    Component: () => <Login />,
-  }).GetRoutes();
+  const StackRouter: Stack[] = new Stacks(
+    {
+      Name: "Login",
+      Component: () => <Login />,
+    },
+    {
+      Name: "NewUser",
+      Component: () => <NewUser />,
+    }
+  ).GetRoutes();
+  
   return (
     <Stacks.Stack.Navigator
       initialRouteName={StackRouter[0].Name}
       screenOptions={{ headerShown: false }}
     >
-      {StackRouter.map((route, index) => {
+       {StackRouter.map((route, index) => {
         return (
           <Stacks.Stack.Screen
             key={index}
@@ -18,7 +27,8 @@ export default function Router() {
             component={route.Component}
           />
         );
-      })}
+      })} 
     </Stacks.Stack.Navigator>
   );
 }
+

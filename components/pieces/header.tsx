@@ -4,7 +4,7 @@ import { ThemeToggle } from "../ThemeToggle";
 import { Text } from "~/components/ui/text";
 export function Header() {
   return (
-    <Card className="w-full h-[100px] flex-row justify-between items-center">
+    <Card className="w-full h-[100px] flex-row justify-between items-center absolute top-[0px]">
       <Text className="pl-10">Bem vindo</Text>
       <View className="pr-10">
         <ThemeToggle />
